@@ -57,3 +57,4 @@ CREATE TABLE IF NOT EXISTS cliente_transacoes (
 	data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY (banco_numero,agencia_numero,conta_corrente_numero,conta_corrente_digito,cliente_numero) 
 	REFERENCES conta_corrente(banco_numero,agencia_numero,numero,digito,cliente_numero)
+	);
